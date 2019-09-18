@@ -2,11 +2,10 @@ import React, {useContext} from 'react';
 import { GridItem } from '../index';
 import { AppContext } from '../../context/AppContext';
 import styles from './MenuGrid.module.css'
+import uuidv4 from "uuid/v4";
 
 const MenuGrid = () => {
   const { menuGridItems } = useContext(AppContext);
-
-  console.log(menuGridItems)
 
   return (
     <div>
@@ -17,7 +16,7 @@ const MenuGrid = () => {
           menuGridItems.map(item => {
             const image = item.image.asset._ref.split('image-')[1].replace('-jpg', '.jpg').replace('-png', '.png');
             return(
-              <GridItem key={item._id} image={image} name={item.name.en} />  
+              <GridItem key={uuidv4()} image={image} name={item.name.en} />  
             )          
           })
         }
