@@ -1,0 +1,6 @@
+.gridItemWrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 38px 19px
+}

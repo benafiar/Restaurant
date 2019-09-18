@@ -5,6 +5,7 @@ const AppContext = createContext();
 
 const AppContextProvider = ({ children }) => {
   const [sections, setSections] = useState([]);
+  const [menuGridItems, setMenuGridItems] = useState([])
 
   const setMenuSections = async () => {
     const { data } = await axios.get(`/api/menu`);
@@ -14,6 +15,7 @@ const AppContextProvider = ({ children }) => {
       return refs.includes(item._id);
     });
     setSections([...categories]);
+    setMenuGridItems([...categories])
   };
 
   const fetchData = useCallback(async () => {
@@ -25,7 +27,7 @@ const AppContextProvider = ({ children }) => {
   }, [fetchData]);
 
   return (
-    <AppContext.Provider value={{ sections }}>
+    <AppContext.Provider value={{ sections, menuGridItems, setMenuGridItems }}>
       {children}
     </AppContext.Provider>
   );

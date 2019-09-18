@@ -11,7 +11,6 @@ const Navbar = () => {
       id: section._id,
       carouselImage: section.carouselImage.asset._ref,
       name: section.name.en,
-      image: section.image.asset._ref
     };
   });
   return (

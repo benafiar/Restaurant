@@ -1,0 +1,27 @@
+.menuTitle{
+  text-align: center;
+  display: block;
+  font-size: 54px;
+  text-decoration: underline;
+  margin: 30px 0
+}
+
+.menuGrid{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: center
+}
+
+.menuGridItems {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 0px;
+}
+
+.menuGridItems img{
+  height: 250px;
+  width: 250px;
+}

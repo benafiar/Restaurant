@@ -8,7 +8,7 @@ const App = () => (
   <BrowserRouter>
     <AppContextProvider>
         <Layout>
-        <Route exact path="/" component={Home} />
+          <Route exact path="/" component={Home} />
         </Layout>
     </AppContextProvider>
   </BrowserRouter>
