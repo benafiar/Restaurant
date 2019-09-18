@@ -1,4 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Layout from './containers/Layout/Layout';
 
-ReactDOM.render(<h1>Hello, world</h1>, document.getElementById('root'));
+ReactDOM.render(<Layout />, document.getElementById('root'));
