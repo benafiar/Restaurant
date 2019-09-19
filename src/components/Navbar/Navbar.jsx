@@ -3,9 +3,8 @@ import { NavItem } from '../index';
 import { AppContext } from '../../context/AppContext';
 import styles from './Navbar.module.css'
 
-const Navbar = () => {
+const Navbar = ({ currentPath }) => {
   const { sections } = useContext(AppContext);
-
   const navContents = sections.map(section => {
     return {
       id: section._id,
@@ -19,9 +18,10 @@ const Navbar = () => {
       {navContents.map(item => {
         const carouselImage = item.carouselImage.split('image-')[1].replace('-png', '.png');
         const { name, id, sectionItems } = item;
-        return <NavItem key={id} carouselImage={carouselImage} name={name} items={sectionItems} />;
+        return <NavItem key={id} carouselImage={carouselImage} name={name} items={sectionItems} currentPath={currentPath} />;
       })}
     </div>
+    
   );
 };
 

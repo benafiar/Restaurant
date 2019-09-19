@@ -1,29 +1,24 @@
-import React, { useContext } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './NavItem.module.css';
-import { AppContext } from '../../context/AppContext';
+import routeHelper from '../../helpers/routeHelper';
 
-const NavItem = ({ carouselImage, name, items }) => {
-  const { allItems, menuGridItems, setMenuGridItems } = useContext(AppContext);
+const NavItem = ({ carouselImage, name, currentPath }) => {
 
-  console.log(items, "<><><><><><>")
-  console.log(allItems.flat(), "!!!!!!!!")
-  console.log(menuGridItems)
+  const wrapperStyles = [styles.sectionWrapper]
 
-  const handleNavClick = async () => {
-    const currentSelection = [...allItems.flat()].filter(item=>{
-      return items.includes(item._id)
-    })
-    setMenuGridItems([...currentSelection])
-  }
+  if(currentPath === routeHelper(name)) wrapperStyles.push(styles.active)
 
   return (
-    <div className={styles.sectionWrapper} onClick={handleNavClick}>
-      <img
-        src={process.env.PUBLIC_URL + `../../images/${carouselImage}`}
-        alt={name}
-      />
-      <span>{name}</span>
-    </div>
+    <Link to={routeHelper(name)} >
+      <div className={wrapperStyles.join(" ")}>
+        <img
+          src={process.env.PUBLIC_URL + `../../images/${carouselImage}`}
+          alt={name}
+        />
+        <span>{name}</span>
+      </div>
+    </Link>
   );
 };
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './GridItem.module.css'
+import homeColorPicker from '../../helpers/homeColorPicker'
 
 const GridItem = ({ image, name }) => {
   return (
@@ -8,7 +9,7 @@ const GridItem = ({ image, name }) => {
         src={process.env.PUBLIC_URL + `../../images/${image}`}
         alt={name}
       />
-      <span>{name}</span>
+      <span style={{color: homeColorPicker(name)}}>{name}</span>
     </div>
   );
 };
