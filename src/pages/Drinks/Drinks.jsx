@@ -20,8 +20,7 @@ const Drinks = (props) => {
   }, [])
   return (
     <div>
-      <h1>Drinks</h1>
-      <MenuGrid />
+      <MenuGrid header="DRINKS & COFFEE" />
     </div>
   );
 };

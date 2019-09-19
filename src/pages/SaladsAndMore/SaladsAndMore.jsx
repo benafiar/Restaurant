@@ -21,8 +21,7 @@ const SaladsAndMore = (props) => {
 
   return(
     <div>
-      <h1>SaladsAndMore</h1>
-      <MenuGrid />
+      <MenuGrid header="SALADS & MORE" />
     </div>
   )
 };

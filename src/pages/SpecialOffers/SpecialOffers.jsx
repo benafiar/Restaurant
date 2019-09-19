@@ -21,8 +21,7 @@ const SpecialOffers = (props) => {
 
   return(
     <div>
-      <h1>SpecialOffers</h1>
-      <MenuGrid />
+      <MenuGrid header="SPECIAL OFFERS" />
     </div>
   )
 };

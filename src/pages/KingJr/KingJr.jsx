@@ -21,8 +21,7 @@ const KingJr = (props) => {
 
   return(
     <div>
-      <h1>KingJr</h1>
-      <MenuGrid />
+      <MenuGrid header="KING JR." />
     </div>
   )
 };

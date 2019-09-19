@@ -21,8 +21,7 @@ const Beef = (props) => {
 
   return(
     <div>
-      <h1>BEEF</h1>
-      <MenuGrid />
+      <MenuGrid header="FLAME GRILLED BEEF" />
     </div>
   )
 };

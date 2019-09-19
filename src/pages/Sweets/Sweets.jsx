@@ -21,8 +21,7 @@ const Sweets = (props) => {
 
   return(
     <div>
-      <h1>Sweets</h1>
-      <MenuGrid />
+      <MenuGrid header="SWEETS" />
     </div>
   )
 };

@@ -21,8 +21,7 @@ const ChickenFish = (props) => {
 
   return(
     <div>
-      <h1>ChickenFish</h1>
-      <MenuGrid />
+      <MenuGrid header="CHICKEN & FISH" />
     </div>
   )
 };

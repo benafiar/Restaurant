@@ -1,5 +1,5 @@
 import React, { createContext, useState, useEffect, useCallback } from 'react';
-import gridHelper from '../helpers/gridHelper'
+import gridHelper from '../helpers/gridHelper';
 
 const axios = require('axios');
 const AppContext = createContext();
@@ -19,21 +19,20 @@ const AppContextProvider = ({ children }) => {
     const fullMenu = await axios.get('api/items');
     setSections([...categories]);
     setAllItems([fullMenu.data]);
-    if (window.location.pathname === "/"){
+    if (window.location.pathname === '/') {
       setMenuGridItems([...categories]);
-    } else{
+    } else {
       const gridContents = [...categories].map(section => {
         return {
           gridItems: section.options.map(option => option._ref)
         };
       });
-      console.log(fullMenu.data, "sadsadasdasd")
       const currentSelection = [...fullMenu.data.flat()].filter(item => {
         return gridContents[gridHelper(window.location.pathname)].gridItems.includes(item._id);
-    })
-    console.log(currentSelection, "currentslection")
-    setMenuGridItems([...currentSelection]);
-  }};
+      });
+      setMenuGridItems([...currentSelection]);
+    }
+  };
 
   const fetchData = useCallback(() => {
     setMenuSections();
