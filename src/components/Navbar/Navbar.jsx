@@ -21,7 +21,6 @@ const Navbar = () => {
         const { name, id, sectionItems } = item;
         return <NavItem key={id} carouselImage={carouselImage} name={name} items={sectionItems} />;
       })}
-      <a href="/">HOME</a>
     </div>
     
   );
