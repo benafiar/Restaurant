@@ -1,5 +1,5 @@
 const routeHelper = name => {
-  let route = ""
+  let route = '';
   switch (name) {
     case 'COMBO MEALS':
       route = '/combo_meals';
@@ -31,7 +31,7 @@ const routeHelper = name => {
     default:
       route = '/';
   }
-  return route
+  return route;
 };
 
-export default routeHelper
+export default routeHelper;

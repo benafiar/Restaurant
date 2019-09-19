@@ -7,9 +7,9 @@
 }
 
 .navBar a {
-  text-decoration: none
+  text-decoration: none;
 }
 
-.navBar a:visited{
+.navBar a:visited {
   color: black;
 }

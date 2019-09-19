@@ -1,5 +1,5 @@
 const homeColorPicker = name => {
-  let color = ""
+  let color = '';
   switch (name) {
     case 'COMBO MEALS':
       color = '#AB1A2D';
@@ -31,7 +31,7 @@ const homeColorPicker = name => {
     default:
       color = 'black';
   }
-  return color
+  return color;
 };
 
-export default homeColorPicker
+export default homeColorPicker;

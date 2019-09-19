@@ -4,14 +4,13 @@ import styles from './NavItem.module.css';
 import routeHelper from '../../helpers/routeHelper';
 
 const NavItem = ({ carouselImage, name, currentPath }) => {
+  const wrapperStyles = [styles.sectionWrapper];
 
-  const wrapperStyles = [styles.sectionWrapper]
-
-  if(currentPath === routeHelper(name)) wrapperStyles.push(styles.active)
+  if (currentPath === routeHelper(name)) wrapperStyles.push(styles.active);
 
   return (
-    <Link to={routeHelper(name)} >
-      <div className={wrapperStyles.join(" ")}>
+    <Link to={routeHelper(name)}>
+      <div className={wrapperStyles.join(' ')}>
         <img
           src={process.env.PUBLIC_URL + `../../images/${carouselImage}`}
           alt={name}

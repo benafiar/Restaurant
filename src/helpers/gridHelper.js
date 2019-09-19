@@ -1,11 +1,11 @@
 const gridHelper = route => {
-  let index = null
+  let index = null;
   switch (route) {
     case '/combo_meals':
       index = 0;
       break;
     case '/special_offers':
-      index = 1 ;
+      index = 1;
       break;
     case '/flame_grilled_beef':
       index = 2;
@@ -31,7 +31,7 @@ const gridHelper = route => {
     default:
       index = 0;
   }
-  return index
+  return index;
 };
 
-export default gridHelper
+export default gridHelper;

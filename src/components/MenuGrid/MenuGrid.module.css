@@ -1,16 +1,16 @@
-.menuTitle{
+.menuTitle {
   text-align: center;
   display: block;
   font-size: 54px;
   text-decoration: underline;
-  margin: 36px 0
+  margin: 36px 0;
 }
 
-.menuGrid{
+.menuGrid {
   display: flex;
   flex-direction: row;
   margin: auto;
-  justify-content: center
+  justify-content: center;
 }
 
 .menuGridItems {
@@ -21,14 +21,14 @@
   grid-row-gap: 0px;
 }
 
-.menuGridItems img{
+.menuGridItems img {
   height: 275px;
   width: 275px;
   transition: transform 0.3s;
   margin-bottom: 16px;
 }
 
-.menuGridItems img:hover{
+.menuGridItems img:hover {
   transform: scale(1.1);
   transition: transform 0.3s;
   cursor: pointer;

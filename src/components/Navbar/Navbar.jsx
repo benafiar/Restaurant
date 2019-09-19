@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { NavItem } from '../index';
 import { AppContext } from '../../context/AppContext';
-import styles from './Navbar.module.css'
+import styles from './Navbar.module.css';
 
 const Navbar = ({ currentPath }) => {
   const { sections } = useContext(AppContext);
@@ -18,10 +18,17 @@ const Navbar = ({ currentPath }) => {
       {navContents.map(item => {
         const carouselImage = item.carouselImage.split('image-')[1].replace('-png', '.png');
         const { name, id, sectionItems } = item;
-        return <NavItem key={id} carouselImage={carouselImage} name={name} items={sectionItems} currentPath={currentPath} />;
+        return (
+          <NavItem
+            key={id}
+            carouselImage={carouselImage}
+            name={name}
+            items={sectionItems}
+            currentPath={currentPath}
+          />
+        );
       })}
     </div>
-    
   );
 };
 

@@ -28,7 +28,9 @@ const AppContextProvider = ({ children }) => {
         };
       });
       const currentSelection = [...fullMenu.data.flat()].filter(item => {
-        return gridContents[gridHelper(window.location.pathname)].gridItems.includes(item._id);
+        return gridContents[
+          gridHelper(window.location.pathname)
+        ].gridItems.includes(item._id);
       });
       setMenuGridItems([...currentSelection]);
     }
