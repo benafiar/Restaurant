@@ -22,10 +22,11 @@
 }
 
 .menuGridItems img {
-  height: 275px;
-  width: 275px;
+  height: 250px;
+  width: 250px;
   transition: transform 0.3s;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
+  object-fit: cover;
 }
 
 .menuGridItems img:hover {
