@@ -1,0 +1,10 @@
+export { default as Home } from "./Home/Home";
+export { default as Beef } from "./Beef/Beef";
+export { default as ChickenFish } from "./ChickenFish/ChickenFish";
+export { default as ComboMeals } from "./ComboMeals/ComboMeals";
+export { default as Drinks } from "./Drinks/Drinks";
+export { default as KingJr } from "./KingJr/KingJr";
+export { default as SaladsAndMore } from "./SaladsAndMore/SaladsAndMore";
+export { default as Sides } from "./Sides/Sides";
+export { default as SpecialOffers } from "./SpecialOffers/SpecialOffers";
+export { default as Sweets } from "./Sweets/Sweets";

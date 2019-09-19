@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { NavItem } from '../index';
+import {Link} from 'react-router-dom'
 import { AppContext } from '../../context/AppContext';
 import styles from './Navbar.module.css'
 
@@ -14,6 +15,7 @@ const Navbar = () => {
       sectionItems: section.options.map(option => option._ref)
     };
   });
+  
   return (
     <div className={styles.navBar}>
       {navContents.map(item => {
@@ -21,6 +23,7 @@ const Navbar = () => {
         const { name, id, sectionItems } = item;
         return <NavItem key={id} carouselImage={carouselImage} name={name} items={sectionItems} />;
       })}
+      <Link to={'/'}>HOME</Link>
     </div>
   );
 };
