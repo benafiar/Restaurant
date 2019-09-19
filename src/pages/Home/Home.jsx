@@ -1,9 +1,8 @@
 import React, { Fragment } from "react"
-import { Navbar, MenuGrid } from '../../components'
+import { MenuGrid } from '../../components'
 
 const Home = () => (
   <Fragment>
-    <Navbar />
     <MenuGrid />
   </Fragment>
 )
