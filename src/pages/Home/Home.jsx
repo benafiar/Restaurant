@@ -1,8 +1,9 @@
 import React, {useEffect, useContext} from 'react';
 import { MenuGrid } from '../../components'
 import { AppContext } from '../../context/AppContext';
+import { Navbar } from '../../components';
 
-const Home = () => {
+const Home = ({ match }) => {
   const { setMenuGridItems, sections } = useContext(AppContext);
 
   console.log(sections)
@@ -26,6 +27,7 @@ const Home = () => {
 
   return(
     <div>
+      <Navbar currentPath={match.path} />
       <MenuGrid header="MENU" />
     </div>
   )

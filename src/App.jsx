@@ -3,13 +3,11 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Layout from './containers/Layout/Layout';
 import { AppContextProvider } from './context/AppContext';
 import {Home, ComboMeals, SpecialOffers, Beef, ChickenFish, Sides, Drinks, Sweets, SaladsAndMore, KingJr} from './pages'
-import Navbar from './components/Navbar/Navbar';
 
 const App = () => (
   <BrowserRouter>
     <AppContextProvider>
       <Layout>
-        <Navbar />
         <Route exact path="/" component={Home} />
         <Route exact path="/combo_meals" component={ComboMeals} />
         <Route exact path="/special_offers" component={SpecialOffers} />

@@ -5,3 +5,11 @@
   width: 80%;
   margin: auto;
 }
+
+.navBar a {
+  text-decoration: none
+}
+
+.navBar a:visited{
+  color: black;
+}
