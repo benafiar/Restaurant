@@ -14,7 +14,9 @@ const Home = ({ match }) => {
             _ref: section.image.asset._ref
           }
         },
-        name: section.name.en
+        name: {
+          en: section.name.en
+        }
       };
     });
     setMenuGridItems([...gridContents]);
@@ -33,4 +35,3 @@ const Home = ({ match }) => {
 };
 
 export default Home;
-
