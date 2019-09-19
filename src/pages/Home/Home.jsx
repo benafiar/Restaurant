@@ -3,7 +3,7 @@ import { MenuGrid } from '../../components'
 import { AppContext } from '../../context/AppContext';
 
 const Home = () => {
-  const { allItems, menuGridItems, setMenuGridItems, sections } = useContext(AppContext);
+  const { setMenuGridItems, sections } = useContext(AppContext);
 
   console.log(sections)
 
@@ -23,8 +23,6 @@ const Home = () => {
   useEffect(()=>{
     setMenuGridItems([...gridContents]);
   }, [])
-
-  console.log(menuGridItems, "<><><><><><")
 
   return(
     <div>
