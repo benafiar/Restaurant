@@ -7,7 +7,7 @@
 .sectionWrapper img {
   height: 75px;
   width: 95px;
-  margin: 6px;
+  margin: 6px 12px;
   transition: transform 0.3s;
 }
 

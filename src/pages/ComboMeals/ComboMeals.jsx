@@ -26,7 +26,7 @@ const ComboMeals = ({ match }) => {
   return (
     <div>
       <Navbar currentPath={match.path} />
-      <MenuGrid header="COMBO MEALS" />
+      <MenuGrid header="COMBO MEALS" color="#AB1A2D" />
     </div>
   );
 };

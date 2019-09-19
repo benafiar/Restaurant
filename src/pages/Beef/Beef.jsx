@@ -26,7 +26,7 @@ const Beef = ({ match }) => {
   return (
     <div>
       <Navbar currentPath={match.path} />
-      <MenuGrid header="FLAME GRILLED BEEF" />
+      <MenuGrid header="FLAME GRILLED BEEF" color="#8B542F" />
     </div>
   );
 };

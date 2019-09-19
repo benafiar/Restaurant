@@ -4,12 +4,12 @@ import { AppContext } from '../../context/AppContext';
 import styles from './MenuGrid.module.css'
 import uuidv4 from "uuid/v4";
 
-const MenuGrid = ({ header }) => {
+const MenuGrid = ({ header, color }) => {
   const { menuGridItems } = useContext(AppContext);
 
   return (
     <div>
-      <span className={styles.menuTitle}>{header}</span>
+      <span className={styles.menuTitle} style={{color:`${color}`}}>{header}</span>
       <div className={styles.menuGrid}>
         <div className={styles.menuGridItems}>
         {

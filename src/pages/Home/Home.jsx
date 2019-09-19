@@ -27,7 +27,7 @@ const Home = ({ match }) => {
   return (
     <div>
       <Navbar currentPath={match.path} />
-      <MenuGrid header="MENU" />
+      <MenuGrid header="MENU" color="#8B542F" />
     </div>
   );
 };

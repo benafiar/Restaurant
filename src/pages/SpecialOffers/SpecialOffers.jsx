@@ -26,7 +26,7 @@ const SpecialOffers = ({ match }) => {
   return (
     <div>
       <Navbar currentPath={match.path} />
-      <MenuGrid header="SPECIAL OFFERS" />
+      <MenuGrid header="SPECIAL OFFERS" color="#AB1A2D" />
     </div>
   );
 };

@@ -26,7 +26,7 @@ const KingJr = ({ match }) => {
   return (
     <div>
       <Navbar currentPath={match.path} />
-      <MenuGrid header="KING JR." />
+      <MenuGrid header="KING JR." color="#92BFEA"/>
     </div>
   );
 };
