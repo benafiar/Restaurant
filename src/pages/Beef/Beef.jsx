@@ -11,13 +11,11 @@ const Beef = (props) => {
       gridItems: section.options.map(option => option._ref)
     };
   });
-  console.log(gridContents, "GRID CONTENTS")
+
   useEffect(()=>{
-    
     const currentSelection = [...allItems.flat()].filter(item => {
       return gridContents[gridHelper(props.match.path)].gridItems.includes(item._id);
     });
-    console.log(currentSelection, "CURRENT SELECTION!")
     setMenuGridItems([...currentSelection]);
   }, [])
 
