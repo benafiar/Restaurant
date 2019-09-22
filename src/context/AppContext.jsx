@@ -35,9 +35,7 @@ const AppContextProvider = withRouter(({ location, children }) => {
       gridItems: section.options.map(option => option._ref)
     }));
     const currentSelection = allItems.filter(item =>
-      gridContents[gridHelper(location.pathname)].gridItems.includes(
-        item._id
-      )
+      gridContents[gridHelper(location.pathname)].gridItems.includes(item._id)
     );
     setMenuGridItems([...currentSelection]);
   }, [allItems, location.pathname, sections]);
