@@ -35,7 +35,7 @@ const AppContextProvider = withRouter(({ location, children }) => {
       gridItems: section.options.map(option => option._ref)
     }));
     const currentSelection = allItems.filter(item =>
-      gridContents[gridHelper(window.location.pathname)].gridItems.includes(
+      gridContents[gridHelper(location.pathname)].gridItems.includes(
         item._id
       )
     );
