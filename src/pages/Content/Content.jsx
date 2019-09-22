@@ -15,7 +15,6 @@ const Content = ({ location, match }) => {
       ) : (
         <PlaceHolder />
       )}
-      <div></div>
     </div>
   );
 };
