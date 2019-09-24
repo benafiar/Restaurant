@@ -1,24 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styles from './NavItem.module.css';
-import routeHelper from '../../helpers/routeHelper';
+import { routeHelper } from '../../helpers';
 
-const NavItem = ({ carouselImage, name, currentPath }) => {
-  const wrapperStyles = [styles.sectionWrapper];
-
-  if (currentPath === routeHelper(name)) wrapperStyles.push(styles.active);
-
-  return (
-    <Link to={routeHelper(name)}>
-      <div className={wrapperStyles.join(' ')}>
-        <img
-          src={process.env.PUBLIC_URL + `../../images/${carouselImage}`}
-          alt={name}
-        />
-        <span>{name}</span>
-      </div>
-    </Link>
-  );
-};
+const NavItem = ({ carouselImage, name }) => (
+  <NavLink to={routeHelper(name)}>
+    <div className={styles.sectionWrapper}>
+      <img
+        src={process.env.PUBLIC_URL + `../../images/${carouselImage}`}
+        alt={name}
+      />
+      <span>{name}</span>
+    </div>
+  </NavLink>
+);
 
 export default NavItem;

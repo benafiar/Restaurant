@@ -1,10 +1,10 @@
 import React, { useEffect, useContext, useCallback } from 'react';
 import { MenuGrid } from '../../components';
 import { AppContext } from '../../context/AppContext';
-import { Navbar } from '../../components';
+import { PlaceHolder } from '../../components';
 
-const Home = ({ match }) => {
-  const { setMenuGridItems, sections } = useContext(AppContext);
+const Home = () => {
+  const { setMenuGridItems, sections, loaded } = useContext(AppContext);
 
   const setHomePage = useCallback(() => {
     const gridContents = sections.map(section => {
@@ -28,8 +28,7 @@ const Home = ({ match }) => {
 
   return (
     <div>
-      <Navbar currentPath={match.path} />
-      <MenuGrid header="MENU" color="#8B542F" />
+      {loaded ? <MenuGrid header="MENU" color="#8B542F" /> : <PlaceHolder />}
     </div>
   );
 };

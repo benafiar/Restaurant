@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './GridItem.module.css';
-import homeColorPicker from '../../helpers/homeColorPicker';
+import { homeColorPicker } from '../../helpers';
 
 const GridItem = ({ image, name }) => (
   <div className={styles.gridItemWrapper}>

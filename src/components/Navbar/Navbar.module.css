@@ -10,6 +10,14 @@
   text-decoration: none;
 }
 
+.navBar > a[class='active'] {
+  border-bottom: 1px solid red;
+}
+
+.navBar > a[class='active'] span {
+  color: red;
+}
+
 .navBar a:visited {
   color: black;
 }
