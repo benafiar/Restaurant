@@ -4,6 +4,9 @@ const homeColorPicker = name => {
     case 'COMBO MEALS':
       color = '#AB1A2D';
       break;
+    case 'COMBO':
+      color = '#AB1A2D';
+      break;
     case 'SPECIAL OFFERS':
       color = '#AB1A2D';
       break;
