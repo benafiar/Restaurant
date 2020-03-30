@@ -4,29 +4,32 @@ const gridHelper = route => {
     case '/combo_meals':
       index = 0;
       break;
-    case '/special_offers':
+    case '/combo':
       index = 1;
       break;
-    case '/flame_grilled_beef':
+    case '/special_offers':
       index = 2;
       break;
-    case '/chicken_n_fish':
+    case '/flame_grilled_beef':
       index = 3;
       break;
-    case '/sides':
+    case '/chicken_n_fish':
       index = 4;
       break;
-    case '/drinks_n_coffee':
+    case '/sides':
       index = 5;
       break;
-    case '/sweets':
+    case '/drinks_n_coffee':
       index = 6;
       break;
-    case '/salads_n_more':
+    case '/sweets':
       index = 7;
       break;
-    case '/king_jr':
+    case '/salads_n_more':
       index = 8;
+      break;
+    case '/king_jr':
+      index = 9;
       break;
     default:
       index = 0;
