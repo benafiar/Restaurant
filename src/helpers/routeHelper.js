@@ -4,6 +4,9 @@ const routeHelper = name => {
     case 'COMBO MEALS':
       route = '/combo_meals';
       break;
+    case 'COMBO':
+      route = '/combo_meals';
+      break;
     case 'SPECIAL OFFERS':
       route = '/special_offers';
       break;
