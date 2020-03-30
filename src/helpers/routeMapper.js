@@ -12,6 +12,10 @@ const routeMapper = route =>
       header: 'COMBO MEALS',
       color: '#AB1A2D'
     },
+    '/combo': {
+      header: 'COMBO ',
+      color: '#AB1A2D'
+    },
     '/drinks_n_coffee': {
       header: 'DRINKS & COFFEE',
       color: '#A1007C'
