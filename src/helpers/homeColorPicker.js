@@ -5,7 +5,7 @@ const homeColorPicker = name => {
       color = '#AB1A2D';
       break;
     case 'COMBO':
-      color = '#AB1A2D';
+      color = '#20B2AA';
       break;
     case 'SPECIAL OFFERS':
       color = '#AB1A2D';
